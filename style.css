@@ -29,6 +29,7 @@
 
 /* Typographic tweaks */
 body {
+  min-height: 100vh;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -64,4 +65,38 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+/* General Styling */
+
+body {
+  padding: 2.5rem;
+  background: var(--clr-bg-main);
+  color: var(--clr-text-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--ff-main);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+}
+
+.card {
+  background: var(--clr-neutral-400);
+  border-radius: 1.5rem;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.card__avatar {
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+  max-width: max-content;
+  outline: solid 3px white;
 }
